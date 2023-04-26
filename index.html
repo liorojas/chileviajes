@@ -4,32 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="/assets/css/style.css">
     <title>Document</title>
 </head>
 <body>
-    <header>
-        
-        <nav class="navbar navbar-expand-lg sticky-top bg-opacity-25 bg-body-tertiary" data-bs-theme="dark">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="#"><img class="logo" src="assets/img/viajes.svg" alt=""></a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                      <a class="nav-link active" aria-current="page" href="#">Viajes Chile</a>
-                    </div>
-                      <div class="navbar-nav ms-auto">
-
-                          <a class="nav-link " href="#">Features</a>
-                          <a class="nav-link" href="#">Pricing</a>
-                          <a class="nav-link disabled">Disabled</a>
-                      </div>
-                  </div>
+    
+    <nav class="navbar navbar-expand-lg color-azul sticky-top bg-opacity-25 bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img class="logo" src="assets/img/viajes.svg" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="#">Viajes Chile</a>
                 </div>
-              </nav>
+                <div class="navbar-nav ms-auto">
+                    
+                    <a class="nav-link " href="#carouselExampleFade">Inicio</a>
+                    <a class="nav-link" href="#quienes">Quienes Somos</a>
+                    <a class="nav-link" href="#destacado">Destacado</a>
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                    
+                </div>
+            </div>
+        </div>
+    </nav>
+    <header>
         
         <div id="carouselExampleFade" class="carousel slide carousel-fade">
             <div class="carousel-inner">
@@ -53,11 +58,11 @@
                 </button>
         </div>
     </header>
-    <section class="info pb-5">
+    <section id="quienes" class="d-none d-md-block info pb-5">
         <div>
-            <h3 class="p-5 text-center text-white">Quienes somos?</h3>
+            <h3 class="p-5 text-center text-white fw-light">Quienes somos?</h3>
         </div>
-        <div class="container">
+        <div  class="container">
 
             <div class="row justify-content-around">
                 <div class="col-3">
@@ -94,28 +99,28 @@
         </div>
 
     </section>
-    <section class="info pb-5">
+    <section id="destacado" class="info pb-5">
         <div class="container">
             <div class="row justify-content-around">
-                    <div class=" card col-2 color-azul p-0 " >
+                    <div class=" card col-8 col-md-2 color-azul p-0 " >
                             <img src="assets/img/card1.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             </div>
                     </div>
-                    <div class="card col-2 color-azul p-0 " >
+                    <div class="card col-8 col-md-2 color-azul p-0 " >
                             <img src="assets/img/card2.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             </div>
                     </div>
-                    <div class="card col-2 color-azul p-0 " >
+                    <div class="card col-8 col-md-2 color-azul p-0 " >
                             <img src="assets/img/card3.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             </div>    
                     </div>
-                    <div class="card col-2 color-azul p-0 " >
+                    <div class="card col-8 col-md-2 color-azul p-0 " >
                             <img src="assets/img/card4.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -125,11 +130,62 @@
         </div>
 
     </section>
-    
+    <section id="contacto" class="info pb-5">
+        <div>
+            <h3 class="text-center text-white fw-light">CONTACTO</h3>
+        </div>
+        <div class="container">
+                <form>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label text-white">Nombre</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label text-white">Asunto</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="input">
+                            <label class="text-white" for="">Mensaje</label>
+                               
+                                <textarea class="form-control" aria-label="With textarea"></textarea>
+                              </div>
+                        <div class="mb-3 form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          
+                        </div>
+                        <!-- Aca hay un tooltip -->
+                        <button type="submit button"         data-bs-toggle="tooltip" data-bs-placement="top"
+                        data-bs-custom-class="custom-tooltip"
+                        data-bs-title="Un ejecutivo se contactará contigo dentro de las proximas 24 horas" class="btn btn color-azul">TOOLTIP</button>
+                      </form>
+
+        </div>
+
+    </section>
+    <footer class="color-azul p-3">
+        <div class="container">
+
+            <div class="row text-white">
+                <div class="col-5">
+                    <h4 class="fw-light">VIAJES CHILE</h4>
+                </div>
+                <div class="col-5 ms-auto">
+                        <i class="fa-brands fa-github"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
     <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/script.js"></script>
     <script src="https://kit.fontawesome.com/bacfda6896.js" crossorigin="anonymous"></script>
 </body>
 </html>
