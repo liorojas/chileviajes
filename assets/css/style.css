@@ -1,0 +1,18 @@
+body * {
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: rgb(17, 174, 174);
+}
+
+.logo{
+    width: 30px;
+}
+
+.info {
+    background-color: black;
+}
+.color-azul{
+    background-color:  rgb(17, 174, 174);
+}
