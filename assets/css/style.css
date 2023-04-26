@@ -11,7 +11,7 @@ nav {
 }
 
 .logo{
-    width: 30px;
+    width: 30px!important;
 }
 
 .info {
