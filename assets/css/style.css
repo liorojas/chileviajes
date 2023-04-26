@@ -8,6 +8,7 @@ html{
 }
 nav {
     background-color: rgb(17, 174, 174)!important;
+    opacity: 75%;
 }
 
 .logo{
